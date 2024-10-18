@@ -3,11 +3,12 @@
   gap: 10px;
 }
 
-.header__nav-item {
+.header__nav-item a {
   padding: 8px 18px;
   border: 1.2px solid rgba(232, 232, 232, 1);
   border-radius: 20px;
   font: 15px Nunito;
+  font-weight: 500;
   color: rgba(27, 31, 33, 1);
   line-height: 21px;
 }

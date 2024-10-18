@@ -1,0 +1,25 @@
+.preview__content {
+  padding-block: 46px;
+}
+
+.preview__content-theme {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-item {
+  color: rgba(148, 172, 35, 1);
+  font: 15px Nunito;
+  font-weight: 500;
+}
+
+.theme-item_is-activ {
+  background-color: rgba(190, 219, 57, 1);
+  ;
+  color: rgba(27, 31, 33, 1);
+  border-radius: 20px;
+  padding: 8px 18px;
+
+}

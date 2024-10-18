@@ -1,0 +1,7 @@
+@import url('./__image/preview__image.css');
+@import url('./__content/preview__content.css');
+
+.preview {
+  display: flex;
+  gap: 8px;
+}
