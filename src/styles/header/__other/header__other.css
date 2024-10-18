@@ -1,0 +1,10 @@
+.header__other {
+  display: flex;
+  gap: 26px;
+}
+
+.header__other-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
