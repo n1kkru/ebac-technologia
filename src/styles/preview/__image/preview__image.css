@@ -1,4 +1,26 @@
+.preview__image-block {
+  position: relative;
+}
+
 .preview__image {
-  max-width: 480px;
+  min-width: 480px;
   max-height: 560px;
+}
+
+.preview__image-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  background-image: url('../../../img/gaming-sticker.png');
+  z-index: 10;
+}
+
+.mask-image {
+  --webkit-mask-image: url('../../../svg/mask-1.svg');
+  mask-image: url('../../../svg/mask-1.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
 }

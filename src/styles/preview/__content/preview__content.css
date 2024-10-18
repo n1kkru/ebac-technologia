@@ -1,4 +1,7 @@
 .preview__content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   padding-block: 46px;
 }
 
@@ -7,6 +10,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
+  padding: 0;
 }
 
 .theme-item {
@@ -16,10 +20,55 @@
 }
 
 .theme-item_is-activ {
-  background-color: rgba(190, 219, 57, 1);
-  ;
-  color: rgba(27, 31, 33, 1);
   border-radius: 20px;
   padding: 8px 18px;
+  color: rgba(27, 31, 33, 1);
+  background-color: rgba(190, 219, 57, 1);
+}
 
+.preview__content-title {
+  max-width: 600px;
+  color: rgba(27, 31, 33, 1);
+  font: 400 36px "Archivo Black", "san-serif";
+  line-height: 43.2px;
+}
+
+.preview__content-text {
+  max-width: 450px;
+  color: rgba(117, 119, 120, 1);
+  font: 400 18px "Nunito";
+  line-height: 28.8px;
+}
+
+.preview__content-date-and-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(174, 174, 174, 1);
+}
+
+.preview__content-date-and-time time {
+  padding-inline-end: 16px;
+}
+
+.preview__content-button {
+  position: relative;
+  width: 232px;
+  height: 59px;
+  margin-block-start: 38px;
+  border: 0;
+  border-radius: 40px;
+  padding: 15px;
+  background-color: rgba(190, 219, 57, 1);
+}
+
+.preview__content-button::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 220.6px;
+  height: 47.4px;
+  border: 1.5px solid rgba(27, 31, 33, 1);
+  border-radius: 30px;
 }

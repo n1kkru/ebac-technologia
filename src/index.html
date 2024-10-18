@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBAC</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EBAC</title>
-</head>
-
-<body>
-  <header class="header">
-    <img class="header__logo" src="<%=require('./svg/logo.svg')%>" alt="Иконка логотип" />
-    <nav>
-      <ul class="header__nav">
-        <li class="header__nav-item">
-          <a href="#">Diseño</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">Programación & Data</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">Gaming</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">Marketing</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">Software</a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#">Carrera</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__other">
-      <img class="search" src="<%=require('./svg/search.svg')%>" alt="Иконка лупа" />
-      <a class="header__other-link" href="#">
-        <span>EBAC</span>
-        <img src="<%=require('./svg/arrow.svg')%>" alt="Иконка ссылка" />
-      </a>
-    </div>
-  </header>
-
-  <main class="content">
-    <section class="preview content__section">
-      <img class="preview__image" src="<%=require('./img/preview-woman.png')%>" alt="Девушка с ноутбуком" />
-      <div class="preview__content">
-        <ul class="preview__content-theme">
-          <li class="theme-item theme-item_is-activ">Gaming</li>
-          <li class="theme-item">Artículo</li>
-          <li class="theme-item">Niños</li>
-          <li class="theme-item">Proyecto</li>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="<%=require('./svg/logo.svg')%>"
+        alt="Иконка логотип"
+      />
+      <nav>
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a href="#">Diseño</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Programación & Data</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Gaming</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Marketing</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Software</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Carrera</a>
+          </li>
         </ul>
-        <h1 class="preview__content-title">
-          El Artista Técnico, cuando la programación y el diseño de juegos se
-          juntan
-        </h1>
-        <p class="preview__content-text">
-          ¡Es posible unir la pasión por los dos universos! ¿Habías escuchado
-          este término antes? Si no te suena de nada, no te sientas mal, el
-          concepto es nuevo. ¡Nosotros te lo explicamos!
-        </p>
-        <div class="preview__content-date-and-time">
-          <date>2 de junio de 2022</date>
-          <div>10 min</div>
-        </div>
-        <button class="preview__content-button">Leer el artículo</button>
+      </nav>
+      <div class="header__other">
+        <img
+          class="search"
+          src="<%=require('./svg/search.svg')%>"
+          alt="Иконка лупа"
+        />
+        <a class="header__other-link" href="#">
+          <span>EBAC</span>
+          <img src="<%=require('./svg/arrow.svg')%>" alt="Иконка ссылка" />
+        </a>
       </div>
-    </section>
-  </main>
-  <footer></footer>
-</body>
+    </header>
 
+    <main class="content">
+      <section class="preview content__section">
+        <div class="preview__image-block">
+          <img
+          class="preview__image mask-image"
+          src="<%=require('./img/preview-woman.png')%>"
+          alt="Девушка с ноутбуком"
+        />
+        </div>
+        <div class="preview__content">
+          <ul class="preview__content-theme">
+            <li class="theme-item theme-item_is-activ">Gaming</li>
+            <li class="theme-item">Artículo</li>
+            <li class="theme-item">Niños</li>
+            <li class="theme-item">Proyecto</li>
+          </ul>
+          <h1 class="preview__content-title">
+            El Artista Técnico, cuando la programación y el diseño de juegos se
+            juntan
+          </h1>
+          <p class="preview__content-text">
+            ¡Es posible unir la pasión por los dos universos! ¿Habías escuchado
+            este término antes? Si no te suena de nada, no te sientas mal, el
+            concepto es nuevo. ¡Nosotros te lo explicamos!
+          </p>
+          <div class="preview__content-date-and-time">
+            <img
+              aria-hidden="true"
+              src="<%=require('./svg/calendar.svg')%>"
+              alt="Дата"
+            />
+            <time>2 de junio de 2022</time>
+            <img
+              aria-hidden="true"
+              src="<%=require('./svg/clock.svg')%>"
+              alt="Время"
+            />
+            <div>10 min</div>
+          </div>
+          <button class="preview__content-button">Leer el artículo</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

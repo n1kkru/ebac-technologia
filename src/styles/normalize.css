@@ -5,6 +5,7 @@ html {
 
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -61,4 +62,8 @@ a {
 
 li {
   list-style-type: none;
+}
+
+h1, h1, h3, h4, p, ul, li {
+  margin: 0;
 }
