@@ -1,0 +1,60 @@
+:root {
+
+  --main-color: rgba(27, 31, 33, 1);
+  --text-color: rgba(117, 119, 120, 1);
+  --date-color: rgba(174, 174, 174, 1);
+
+
+  --accent-color: rgba(148, 172, 35, 1);
+  --accent-bgcolor:  rgba(190, 219, 57, 1);
+
+  --runline-color: rgba(172, 214, 222, 1);
+
+  --background-color: #000028;
+  --button-hover-color:rgba(255, 0, 112, 0.40);
+  --decor-color: var(--accent-color);
+  --subtitle-text-color: #000028;
+
+  --text-font: 'IBM Plex mono', monospace;
+}
+
+.color-mint {
+  --accent-color: rgba(34, 201, 139, 1);
+  --accent-bgcolor: rgba(144, 238, 203, 1);
+}
+
+.color-salat {
+  --accent-color: rgba(148, 172, 35, 1);
+  --accent-bgcolor: rgba(190, 219, 57, 1);
+}
+
+.color-rose {
+  --accent-color: rgba(218, 51, 105, 1);
+  --accent-bgcolor: rgba(236, 149, 177, 1);
+}
+
+.color-orange {
+  --accent-color: rgba(239, 151, 0, 1);
+  --accent-bgcolor: rgba(255, 173, 32, 1);
+}
+
+.color-paleblue {
+  --accent-color: rgba(87, 172, 188, 1);
+  --accent-bgcolor: rgba(172, 214, 222, 1);
+}
+
+.color-carrot {
+  --accent-color: rgba(254, 109, 68, 1);
+  --accent-bgcolor: rgba(254, 109, 68, 1);
+}
+
+.color-vanity {
+  --accent-color: rgba(218, 51, 105, 1);
+  --accent-bgcolor: rgba(218, 51, 105, 1);
+}
+
+.color-purple {
+  --accent-color: rgba(152, 83, 244, 1);
+  --accent-bg: rgba(152, 83, 244, 1);
+}
+

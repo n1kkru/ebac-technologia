@@ -1,0 +1,30 @@
+.articles__runline {
+  background: rgba(172, 214, 222, 1);
+  rotate: -4deg;
+}
+
+.articles__runline-title {
+  padding: 0;
+  font-family: 'Archivo Black';
+  font-size: 58px;
+  line-height: 69.6px;
+  position: relative;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 12s linear infinite;
+}
+
+.articles__runline-title::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: -80px;
+  height: 40px;
+  width: 40px;
+  background-image: url("../../../svg/star.svg");
+}
+
+@keyframes marquee {
+  from { transform: translateX(0px); }
+  to { transform: translateX(-800px); }
+}

@@ -1,0 +1,41 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-block: 46px;
+}
+
+.article__content-theme {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.article__content-title {
+  max-width: 584px;
+  color: rgba(27, 31, 33, 1);
+  font: 400 30px "Archivo Black", "san-serif";
+  line-height: 36px;
+}
+
+.article__content-text {
+  max-width: 480px;
+  color: rgba(117, 119, 120, 1);
+  font: 400 18px "Nunito";
+  line-height: 28.8px;
+}
+
+.article__content-date-and-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(174, 174, 174, 1);
+}
+
+.article__content-date-and-time time {
+  padding-inline-end: 16px;
+}
+

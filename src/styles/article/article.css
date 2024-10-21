@@ -1,0 +1,14 @@
+@import url('./__image/article__image.css');
+@import url('./__content/article__content.css');
+
+.article {
+  display: flex;
+  flex-direction: column;
+  max-width: 584px;
+  max-height: 627px;
+}
+
+.article-big {
+  max-width: 1208px;
+  max-height: 2246px;
+}

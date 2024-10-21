@@ -13,19 +13,6 @@
   padding: 0;
 }
 
-.theme-item {
-  color: rgba(148, 172, 35, 1);
-  font: 15px Nunito;
-  font-weight: 500;
-}
-
-.theme-item_is-activ {
-  border-radius: 20px;
-  padding: 8px 18px;
-  color: rgba(27, 31, 33, 1);
-  background-color: rgba(190, 219, 57, 1);
-}
-
 .preview__content-title {
   max-width: 600px;
   color: rgba(27, 31, 33, 1);

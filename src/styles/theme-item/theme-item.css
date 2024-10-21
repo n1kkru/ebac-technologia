@@ -1,0 +1,12 @@
+.theme-item {
+  color: var(--accent-color);
+  font: 15px Nunito;
+  font-weight: 500;
+}
+
+.theme-item_is-activ {
+  border-radius: 20px;
+  padding: 8px 18px;
+  color: var(--main-color);
+  background-color: var(--accent-bgcolor);
+}
