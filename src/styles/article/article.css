@@ -1,14 +1,49 @@
-@import url('./__image/article__image.css');
-@import url('./__content/article__content.css');
+@import url("./__image/article__image.css");
+@import url("./__content/article__content.css");
 
 .article {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 584px;
   max-height: 627px;
+  margin: auto;
 }
 
 .article-big {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:
+    "img img"
+    "theme title"
+    "date txt";
+  gap: 19px;
   max-width: 1208px;
   max-height: 2246px;
+}
+
+/*теги для большой карточки*/
+.article__image-block {
+  grid-area: img;
+}
+
+.article__content-theme {
+  grid-area: theme;
+  justify-self: end;
+  align-self: start;
+}
+
+.article-big .article__content-title {
+  grid-area: title;
+}
+
+.article-big .article__content-text {
+  grid-area: txt;
+}
+
+.article-big .article__content-date-and-time {
+  grid-area: date;
+  justify-self: end;
+  align-self: start;
 }

@@ -95,17 +95,20 @@
           <h2 class="articles__runline-title">Artículos populares</h2>
           <h2 class="articles__runline-title">Artículos populares</h2>
           <h2 class="articles__runline-title">Artículos populares</h2>
+          <h2 class="articles__runline-title">Artículos populares</h2>
+          <h2 class="articles__runline-title">Artículos populares</h2>
           <!-- <img
             aria-hidden="true"
             src="<%=require('./svg/star.svg')%>"
             alt="Иконка звезда"
           /> -->
         </div>
+
         <div class="articles__album">
           <article class="article">
             <div class="article__image-block">
               <img
-                class="article__image"
+                class="article__image mask-image-first"
                 src="<%=require('./img/woman-and-phone.png')%>"
                 alt="Девушка делает селфи"
               />
@@ -116,6 +119,7 @@
               <li class="theme-item">Niños</li>
               <li class="theme-item">Proyecto</li>
             </ul>
+            <!-- todo отступ время -->
             <h1 class="article__content-title">
               ¿Cómo hacer el cambio de carrera a Diseño de Productos Digitales?
             </h1>
@@ -143,7 +147,7 @@
           <article class="article">
             <div class="article__image-block">
               <img
-                class="article__image"
+                class="article__image mask-image-second"
                 src="<%=require('./img/camera.png')%>"
                 alt="Видеокамера"
               />
@@ -180,7 +184,7 @@
           <article class="article article-big">
             <div class="article__image-block">
               <img
-                class="article__image"
+                class="article__image mask-image-three"
                 src="<%=require('./img/woman-writng.png')%>"
                 alt="Девушка пишет"
               />
@@ -202,24 +206,26 @@
             </p>
             <div class="article__content-date-and-time">
               <img
+                class="icon-date"
                 aria-hidden="true"
                 src="<%=require('./svg/calendar.svg')%>"
                 alt="Дата"
               />
-              <time>2 de junio de 2022</time>
+              <time class="date">2 de junio de 2022</time>
               <img
+                class="icon-time"
                 aria-hidden="true"
                 src="<%=require('./svg/clock.svg')%>"
                 alt="Время"
               />
-              <div>10 min</div>
+              <div class="time">10 min</div>
             </div>
           </article>
 
           <article class="article">
             <div class="article__image-block">
               <img
-                class="article__image"
+                class="article__image mask-image-four"
                 src="<%=require('./img/man-working.png')%>"
                 alt="Человек улыбается за ноутбуком"
               />
@@ -255,7 +261,7 @@
           <article class="article">
             <div class="article__image-block">
               <img
-                class="article__image"
+                class="article__image mask-image-five"
                 src="<%=require('./img/men-think.png')%>"
                 alt="Человек улыбается за ноутбуком"
               />
@@ -289,6 +295,7 @@
               <div>10 min</div>
             </div>
           </article>
+
         </div>
       </section>
     </main>

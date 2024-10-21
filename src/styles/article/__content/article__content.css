@@ -36,6 +36,44 @@
 }
 
 .article__content-date-and-time time {
-  padding-inline-end: 16px;
+  /* padding-inline-end: 16px; */
 }
 
+/* разметка контента большой карточки*/
+.article-big .article__content-theme {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "activ activ activ"
+    ". . .";
+}
+
+.article-big .theme-item_is-activ {
+  grid-area: activ;
+  justify-self: end;
+  align-self: start;
+}
+
+.article-big .article__content-date-and-time {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "date idate"
+    "time itime";
+  justify-items: end;
+}
+
+.icon-date {
+  grid-area: idate;
+}
+.date {
+  grid-area: date;
+}
+.icon-time {
+  grid-area: itime;
+}
+.time {
+  grid-area: time;
+}
