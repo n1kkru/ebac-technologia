@@ -1,30 +1,14 @@
-.article {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding-block: 46px;
-}
-
-.article__content-theme {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  padding: 0;
-  background-color: transparent;
-}
-
 .article__content-title {
   max-width: 584px;
-  color: rgba(27, 31, 33, 1);
+  color: var(--main-color, black);
   font: 400 30px "Archivo Black", "san-serif";
   line-height: 36px;
 }
 
 .article__content-text {
   max-width: 480px;
-  color: rgba(117, 119, 120, 1);
-  font: 400 18px "Nunito";
+  color: var(--text-color, gray);
+  font: var(--text-font);
   line-height: 28.8px;
 }
 
@@ -32,7 +16,10 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(174, 174, 174, 1);
+  color: var(--date-color, gray);
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .article__content-date-and-time time {
@@ -40,13 +27,24 @@
 }
 
 /* разметка контента большой карточки*/
-.article-big .article__content-theme {
+.article-big .content-theme {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   grid-template-areas:
     "activ activ activ"
     ". . .";
+  padding-block-start: 18px;
+}
+
+.article-big .article__content-title {
+  max-width: fit-content;
+  font-size: 36px;
+  line-height: 43.2px;
+}
+
+.article-big .article__content-text {
+  max-width: fit-content;
 }
 
 .article-big .theme-item_is-activ {
@@ -63,6 +61,7 @@
     "date idate"
     "time itime";
   justify-items: end;
+  padding-block-start: 18px;
 }
 
 .icon-date {

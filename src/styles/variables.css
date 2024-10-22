@@ -15,7 +15,7 @@
   --decor-color: var(--accent-color);
   --subtitle-text-color: #000028;
 
-  --text-font: 'IBM Plex mono', monospace;
+  --text-font: 400 18px "Nunito", san-serif;
 }
 
 .color-mint {

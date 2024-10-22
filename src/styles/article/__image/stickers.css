@@ -1,0 +1,40 @@
+.gaming::before,
+.fashion::before, 
+.diseno::before ,
+.marketing::before,
+.software::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  z-index: 10;
+  width: 180px;
+  height: 180px;
+}
+
+.fashion::before {
+  left: -40px;
+  background-image: url('../../../img/fashion.png');
+}
+
+.diseno::before {
+  right: -40px;
+  background-image: url('../../../img/diseno.png');
+}
+
+.marketing::before {
+  top: -75px;
+  left: -55px;
+  width: 260px;
+  background-image: url('../../../img/marketing.png');
+}
+
+.software::before {
+  right: -40px;
+  background-image: url('../../../img/software.png');
+}
+
+.gaming::before {
+  top: 0;
+  right: 0;
+  background-image: url('../../../img/gaming-sticker.png');
+}

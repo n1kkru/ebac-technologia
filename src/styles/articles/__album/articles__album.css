@@ -1,5 +1,4 @@
 .articles__album {
-  padding: 224px 116px 136px;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
@@ -7,7 +6,8 @@
     ". ."
     "big big"
     ". ."; 
-  gap: 40px;
+  gap: 95px 40px;
+  padding: 200px 116px 136px;
 }
 
 .article-big {

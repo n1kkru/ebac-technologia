@@ -1,24 +1,28 @@
 @import url("./__image/article__image.css");
 @import url("./__content/article__content.css");
+@import url("./__image/stickers.css");
+
 
 .article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 16px;
   max-width: 584px;
   max-height: 627px;
   margin: auto;
+  padding-block-end: 46px;
 }
 
 .article-big {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 376px auto;
   grid-template-rows: 1fr auto auto;
   grid-template-areas:
     "img img"
     "theme title"
     "date txt";
-  gap: 19px;
+  gap: 0px 19px;
   max-width: 1208px;
   max-height: 2246px;
 }
@@ -28,7 +32,7 @@
   grid-area: img;
 }
 
-.article__content-theme {
+.content-theme {
   grid-area: theme;
   justify-self: end;
   align-self: start;
