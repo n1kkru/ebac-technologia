@@ -1,12 +1,5 @@
-@import url('./__runline/articles__runline.css');
 @import url('./__album/articles__album.css');
 
-
-.runline {
-  display: flex;
-  align-items: center;
-  gap: 120px;
-  width: 100vw;
-  height: 120px;
-  margin-inline-start: -10px;
+.articles > .runline {
+  rotate: -4deg;
 }

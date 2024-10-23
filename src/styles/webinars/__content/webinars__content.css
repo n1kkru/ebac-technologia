@@ -1,0 +1,32 @@
+.webinars__content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 65px auto;
+  grid-template-areas:
+    "title title button"
+    ". . .";
+  justify-content: center;
+  gap: 80px 40px;
+  padding: 116px;
+  color: rgba(252, 250, 249, 1);
+  background-color: rgba(27, 31, 33, 1);
+}
+
+.webinars__content-title {
+  grid-area: title;
+  font: 400 46px 'Archivo Black';
+  line-height: 55.2px;
+}
+
+.webinars__content-button {
+  grid-area: button;
+  justify-self: end;
+  width: 280px;
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+  color: inherit;
+  font: 700 18px 'Nunito';
+  background: var(--accent-bgcolor);
+  cursor: pointer;
+}

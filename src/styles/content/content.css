@@ -2,4 +2,7 @@
 
 .content {
   margin: auto;
+  background-image: url('../../img/bg.png'), url('../../img/bg2.png');
+  background-position: left top, left bottom;
+  background-repeat: no-repeat, no-repeat;
 }

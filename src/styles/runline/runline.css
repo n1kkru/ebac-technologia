@@ -1,9 +1,14 @@
-.articles__runline {
-  background: rgba(172, 214, 222, 1);
-  rotate: -4deg;
+.runline {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  width: 100vw;
+  height: 120px;
+  margin-inline-start: -10px;
+  background: var(--accent-bgcolor);
 }
 
-.articles__runline-title {
+.runline-title {
   padding: 0;
   font-family: 'Archivo Black';
   font-size: 58px;
@@ -14,14 +19,14 @@
   animation: marquee 3s linear infinite;
 }
 
-.articles__runline-title::after {
+.runline-title::after {
   content: '';
   position: absolute;
   top: 15px;
   right: calc(100% + 40px);
   height: 40px;
   width: 40px;
-  background-image: url("../../../svg/star.svg");
+  background-image: url("../../svg/star.svg");
 }
 
 @keyframes marquee {

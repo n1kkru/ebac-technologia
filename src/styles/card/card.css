@@ -1,0 +1,45 @@
+.card {
+  max-width: 376px;
+  border-radius: 32px;
+  padding: 32px;
+  background-color: var(--accent-bgcolor);
+}
+
+.card-author {
+  display: grid;
+  grid-template-columns: 64px auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "avatar name "
+    "avatar job";
+  gap: 0 20px;
+}
+
+.card-avatar {
+  max-width: 64px;
+  max-height: 64px;
+  grid-area: avatar;
+}
+
+.card-avatar > img {
+  width: 100%;
+  --webkit-mask-image: url("../../svg/avatar-mask.svg");
+  mask-image: url("../../svg/avatar-mask.svg");
+  mask-repeat: no-repeat;
+}
+
+.card-name {
+  grid-area: name;
+  font: 400 26px 'Archivo Black', san-serif;
+}
+
+.card-job {
+  grid-area: job;
+  font: 500 15px 'Nunito', san-serif;
+}
+
+.card-theme {
+  font: 400 30px 'Archivo Black', san-serif;
+  line-height: 36px;
+  padding-block: 40px;
+}

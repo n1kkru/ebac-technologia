@@ -43,18 +43,18 @@
   --accent-bgcolor: rgba(172, 214, 222, 1);
 }
 
-.color-carrot {
-  --accent-color: rgba(254, 109, 68, 1);
+.color-coral {
+  --accent-color: rgba(254, 137, 104, 1);
   --accent-bgcolor: rgba(254, 109, 68, 1);
 }
 
-.color-vanity {
-  --accent-color: rgba(218, 51, 105, 1);
+.color-pink {
+  --accent-color: rgba(236, 149, 177, 1);
   --accent-bgcolor: rgba(218, 51, 105, 1);
 }
 
 .color-purple {
-  --accent-color: rgba(152, 83, 244, 1);
-  --accent-bg: rgba(152, 83, 244, 1);
+  --accent-color: rgba(208, 176, 250, 1);
+  --accent-bgcolor: rgba(152, 83, 244, 1);
 }
 
