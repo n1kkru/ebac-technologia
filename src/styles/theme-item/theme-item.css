@@ -1,7 +1,6 @@
 .theme-item {
   color: var(--accent-color);
-  font: 15px Nunito;
-  font-weight: 500;
+  font: 500 15px "Nunito", "san-serif";
 }
 
 .theme-item_is-activ {

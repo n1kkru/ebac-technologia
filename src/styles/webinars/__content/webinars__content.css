@@ -1,4 +1,5 @@
 .webinars__content {
+  z-index: 0;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 65px auto;
@@ -10,11 +11,13 @@
   padding: 116px;
   color: rgba(252, 250, 249, 1);
   background-color: rgba(27, 31, 33, 1);
+  background-image: url("../../../img/bg-web.png");
+  background-repeat: no-repeat;
 }
 
 .webinars__content-title {
   grid-area: title;
-  font: 400 46px 'Archivo Black';
+  font: 400 46px "Archivo Black", "san-serif";
   line-height: 55.2px;
 }
 
@@ -26,7 +29,7 @@
   border-radius: 40px;
   padding: 15px;
   color: inherit;
-  font: 700 18px 'Nunito';
+  font: 700 18px "Nunito", "san-serif";
   background: var(--accent-bgcolor);
   cursor: pointer;
 }

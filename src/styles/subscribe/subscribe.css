@@ -1,0 +1,110 @@
+.subscribe {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.subscribe > .runline {
+  rotate: 2deg;
+}
+
+.subscribe__card {
+  --webkit-mask-image: url("../../svg/subscribe-mask.svg");
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 88px;
+  width: 1208px;
+  max-height: 518px;
+  margin: 94px auto 224px;
+  background: url("../../img/bg-subscribe.png");
+  background-color: var(--accent-color, rgba(87, 172, 188, 1));
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+  mask-image: url("../../svg/subscribe-mask.svg");
+  mask-repeat: no-repeat;
+}
+
+.subscribe__card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+  max-width: 792px;
+  padding: 64px;
+  color: rgba(252, 250, 249, 1);
+}
+
+.content__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 624px;
+}
+
+.content__info-title {
+  font: 400 36px "Archivo Black", san-serif;
+  line-height: 43.2px;
+}
+
+.content__info-subtitle {
+  font: 400 18px "Nunito", san-serif;
+  line-height: 28.8px;
+}
+
+.content__form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: ". ." "chckbx chckbx";
+  gap: 16px;
+  max-width: 576px;
+  font: 500 18px "Nunito", san-serif;
+}
+
+.content__form input[type="email"] {
+  width: 280px;
+  height: 50px;
+  border: 1.5px solid rgba(252, 250, 249, 1);
+  border-radius: 88px;
+  background-color: inherit;
+}
+
+.content__form-button {
+  width: 280px;
+  height: 50px;
+  border: none;
+  border-radius: 88px;
+  color: rgba(252, 250, 249, 1);
+  font: 700 18px "Nunito", san-serif;
+  background-color: var(--accent-bgcolor);
+}
+
+.content__form-checkbox {
+  grid-area: chckbx;
+  font: 400 15px "Nunito", san-serif;
+}
+.content__form-checkbox input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+
+.subscribe__card__decor {
+  position: relative;
+  width: 416px;
+  height: 518px;
+  background: rgba(27, 31, 33, 1);
+  background-image: url("../../img/bg-convert.png");
+  mask-image: url("../../svg/subscribe-mask.svg");
+  mask-repeat: no-repeat;
+}
+
+.convert-blur {
+  position: absolute;
+  top: 70px;
+  left: calc(50%-60px);
+}
+
+.convert {
+  position: absolute;
+  top: 180px;
+  left: calc(50% - 153px);
+}

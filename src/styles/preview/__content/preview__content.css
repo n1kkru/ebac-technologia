@@ -7,7 +7,7 @@
 
 .preview__content-title {
   max-width: 600px;
-  color: var(--main-color, black);
+  color: var(--main-color, rgba(27, 31, 33, 1));
   font: 400 36px "Archivo Black", "san-serif";
   line-height: 43.2px;
 }
@@ -41,10 +41,8 @@
   border: 0;
   border-radius: 40px;
   padding: 15px;
-  font-family: "Nunito";
-  font-weight: 500;
-  font-size: 18px;
-  background-color: rgba(190, 219, 57, 1);
+  font: 500 18px "Nunito", "san-serif";
+  background-color: var(--accent-bgcolor, rgba(190, 219, 57, 1));
 }
 
 .preview__content-button::after {
@@ -54,6 +52,6 @@
   left: 5px;
   width: 220.6px;
   height: 47.4px;
-  border: 1.5px solid rgba(27, 31, 33, 1);
+  border: 1.5px solid var(--main-color);
   border-radius: 30px;
 }

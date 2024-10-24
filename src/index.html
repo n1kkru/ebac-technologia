@@ -309,7 +309,7 @@
             Todos os webinars
           </button>
 
-          <article class="webinars__content-card card">
+          <article class="webinars__content-card card color-paleblue">
             <div class="card-author">
               <div class="card-avatar">
                 <img
@@ -343,7 +343,7 @@
             </div>
           </article>
 
-          <article class="webinars__content-card card">
+          <article class="webinars__content-card card color-coral">
             <div class="card-author">
               <div class="card-avatar">
                 <img
@@ -351,22 +351,22 @@
                   alt="Аватар спикера"
                 />
               </div>
-              <h4 class="card-name">Julia Alvarez</h4>
-              <p class="card-job">Programador, consultor</p>
+              <h4 class="card-name">Diego Xochihuila</h4>
+              <p class="card-job">Diseñadora, editora</p>
             </div>
             <p class="card-theme">
-              Cómo iniciar el calendario de publicaciones de tu marca
+              Cloud Computing: Qué es y cuáles son sus ventajas en la industria
             </p>
             <div class="card-description">
               <p>Próximamente</p>
-              <p>Webinar</p>
+              <p>Workshop</p>
               <div class="article__content-date-and-time">
                 <img
                   aria-hidden="true"
                   src="<%=require('./svg/calendar.svg')%>"
                   alt="Дата"
                 />
-                <time>31 de maio, 01 e 02 de junho de 2022</time>
+                <time>30 e 31 de maio e 01, 02 e 03 de junho de 2022</time>
                 <img
                   aria-hidden="true"
                   src="<%=require('./svg/clock.svg')%>"
@@ -377,7 +377,7 @@
             </div>
           </article>
 
-          <article class="webinars__content-card card">
+          <article class="webinars__content-card card color-orange">
             <div class="card-author">
               <div class="card-avatar">
                 <img
@@ -385,22 +385,24 @@
                   alt="Аватар спикера"
                 />
               </div>
-              <h4 class="card-name">Julia Alvarez</h4>
-              <p class="card-job">Programador, consultor</p>
+              <h4 class="card-name">Consuela Zacatelco</h4>
+              <p class="card-job">
+                Empresario graduado de la Universidad de Harvard
+              </p>
             </div>
             <p class="card-theme">
-              Cómo iniciar el calendario de publicaciones de tu marca
+              Empresario graduado de la Universidad de Harvard
             </p>
             <div class="card-description">
               <p>Próximamente</p>
-              <p>Webinar</p>
+              <p>Demonstração</p>
               <div class="article__content-date-and-time">
                 <img
                   aria-hidden="true"
                   src="<%=require('./svg/calendar.svg')%>"
                   alt="Дата"
                 />
-                <time>31 de maio, 01 e 02 de junho de 2022</time>
+                <time>01 y 02 de junio de 2022</time>
                 <img
                   aria-hidden="true"
                   src="<%=require('./svg/clock.svg')%>"
@@ -410,6 +412,70 @@
               </div>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="runline color-coral">
+          <h2 class="runline-title">Suscribiete</h2>
+          <h2 class="runline-title">Suscribiete</h2>
+          <h2 class="runline-title">Suscribiete</h2>
+          <h2 class="runline-title">Suscribiete</h2>
+          <h2 class="runline-title">Suscribiete</h2>
+          <h2 class="runline-title">Suscribiete</h2>
+        </div>
+
+        <div class="subscribe__card color-paleblue">
+          <div class="subscribe__card__content">
+            <div class="content__info">
+              <h3 class="content__info-title">
+                Suscríbete a nuestra newsletter para no perderte nada nuevo
+              </h3>
+              <p class="content__info-subtitle">
+                Tendencia en el mercado laboral: conozca esta profesión que
+                transforma la experiencia del Usuario a través de elementos
+                textuales.
+              </p>
+            </div>
+            <form class="content__form" action="">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Su correo electrónico"
+              />
+              <button
+                class="content__form-button color-coral"
+                type="submit"
+                value="Enviar"
+              >
+                Enviar
+              </button>
+              <div class="content__form-checkbox">
+                <input type="checkbox" name="confirm" id="confirm" checked />
+                <label for="confirm">
+                  Confirmo que he leído, acepto y entiendo los términos y
+                  condiciones, así como el aviso de privacidad
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="subscribe__card__decor">
+            <img
+              aria-hidden="true"
+              class="convert-blur"
+              src="<%=require('./svg/convert-blur.svg')%>"
+              alt=""
+            />
+            <img
+              aria-hidden="true"
+              class="convert"
+              src="<%=require('./svg/convert.svg')%>"
+              alt=""
+            />
+          </div>
         </div>
       </section>
     </main>

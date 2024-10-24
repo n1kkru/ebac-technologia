@@ -4,9 +4,9 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -22,10 +22,10 @@ input,
 optgroup,
 select,
 textarea {
+  margin: 0;
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0;
 }
 
 button,
@@ -65,7 +65,13 @@ li {
   list-style-type: none;
 }
 
-h1, h1, h3, h4, p, ul, li {
+h1,
+h1,
+h3,
+h4,
+p,
+ul,
+li {
   margin: 0;
 }
 

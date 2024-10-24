@@ -5,12 +5,10 @@
 }
 
 .header__nav-item a {
-  padding: 8px 18px;
   border: 1.2px solid rgba(232, 232, 232, 1);
   border-radius: 20px;
-  font: 15px Nunito;
-  font-weight: 500;
-  color: rgba(27, 31, 33, 1);
+  padding: 8px 18px;
+  color: var(--main-color, rgba(27, 31, 33, 1));
+  font: 500 15px "Nunito", "san-serif";
   line-height: 21px;
 }
-

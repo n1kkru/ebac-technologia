@@ -1,4 +1,5 @@
 .runline {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 120px;
@@ -6,6 +7,7 @@
   height: 120px;
   margin-inline-start: -10px;
   background: var(--accent-bgcolor);
+  z-index: 10;
 }
 
 .runline-title {
@@ -17,6 +19,7 @@
   white-space: nowrap;
   will-change: transform;
   animation: marquee 3s linear infinite;
+  z-index: 10;
 }
 
 .runline-title::after {
