@@ -324,18 +324,20 @@
               Cómo iniciar el calendario de publicaciones de tu marca
             </p>
             <div class="card-description">
-              <p>Próximamente</p>
-              <p>Webinar</p>
-              <div class="">
+              <div>
+                <p>Próximamente</p>
+                <p>Webinar</p>
+              </div>
+              <div class="card-description-date">
                 <img
                   aria-hidden="true"
-                  src="<%=require('./svg/calendar.svg')%>"
+                  src="<%=require('./svg/calendar-white.svg')%>"
                   alt="Дата"
                 />
                 <time>31 de maio, 01 e 02 de junho de 2022</time>
                 <img
                   aria-hidden="true"
-                  src="<%=require('./svg/clock.svg')%>"
+                  src="<%=require('./svg/clock-white.svg')%>"
                   alt="Время"
                 />
                 <time>19:00</time>
@@ -358,18 +360,20 @@
               Cloud Computing: Qué es y cuáles son sus ventajas en la industria
             </p>
             <div class="card-description">
-              <p>Próximamente</p>
-              <p>Workshop</p>
-              <div class="article__content-date-and-time">
+              <div>
+                <p>Próximamente</p>
+                <p>Workshop</p>
+              </div>
+              <div class="card-description-date">
                 <img
                   aria-hidden="true"
-                  src="<%=require('./svg/calendar.svg')%>"
+                  src="<%=require('./svg/calendar-white.svg')%>"
                   alt="Дата"
                 />
                 <time>30 e 31 de maio e 01, 02 e 03 de junho de 2022</time>
                 <img
                   aria-hidden="true"
-                  src="<%=require('./svg/clock.svg')%>"
+                  src="<%=require('./svg/clock-white.svg')%>"
                   alt="Время"
                 />
                 <time>19:00</time>
@@ -394,18 +398,20 @@
               Empresario graduado de la Universidad de Harvard
             </p>
             <div class="card-description">
-              <p>Próximamente</p>
-              <p>Demonstração</p>
-              <div class="article__content-date-and-time">
+              <div>
+                <p>Próximamente</p>
+                <p>Demonstração</p>
+              </div>
+              <div class="card-description-date">
                 <img
                   aria-hidden="true"
-                  src="<%=require('./svg/calendar.svg')%>"
+                  src="<%=require('./svg/calendar-white.svg')%>"
                   alt="Дата"
                 />
                 <time>01 y 02 de junio de 2022</time>
                 <img
                   aria-hidden="true"
-                  src="<%=require('./svg/clock.svg')%>"
+                  src="<%=require('./svg/clock-white.svg')%>"
                   alt="Время"
                 />
                 <time>19:00</time>
@@ -477,8 +483,121 @@
             />
           </div>
         </div>
+
+        <div class="runline color-pink">
+          <h2 class="runline-title">Descuento para cursos 20%</h2>
+          <h2 class="runline-title">Descuento para cursos 20%</h2>
+          <h2 class="runline-title">Descuento para cursos 20%</h2>
+          <h2 class="runline-title">Descuento para cursos 20%</h2>
+          <h2 class="runline-title">Descuento para cursos 20%</h2>
+          <h2 class="runline-title">Descuento para cursos 20%</h2>
+        </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <section class="footer__content">
+        <div class="footer__content-about">
+          <img src="<%=require('./img/logo-white.png')%>" alt="Логотип" />
+          <img
+            class="achivement"
+            src="<%=require('./img/achivement.png')%>"
+            alt="Достижение"
+          />
+        </div>
+        <form class="footer__content-form">
+          <input
+            class="footer__content-form-input"
+            type="email"
+            name="mailing"
+            id="mailing"
+            placeholder="Su correo electrónico"
+          />
+          <input
+            class="footer__content-form-button color-purple"
+            type="button"
+            value="Suscribirse al boletín"
+          />
+        </form>
+
+        <div class="footer__content-block cursos">
+          <h5 class="footer__content-title">cursos</h5>
+          <ul class="footer__content-list">
+            <li class="footer__content-list-item">Diseño</li>
+            <li class="footer__content-list-item">Programación & Data</li>
+            <li class="footer__content-list-item">Gaming</li>
+            <li class="footer__content-list-item">Marketing</li>
+            <li class="footer__content-list-item">Software</li>
+          </ul>
+        </div>
+
+        <div class="footer__content-block web">
+          <h5 class="footer__content-title">webinars</h5>
+          <ul class="footer__content-list">
+            <li class="footer__content-list-item">Próximamente</li>
+            <li class="footer__content-list-item">Anteriores</li>
+          </ul>
+        </div>
+
+        <div class="footer__content-block sobre">
+          <h5 class="footer__content-title">sobre</h5>
+          <ul class="footer__content-list">
+            <li class="footer__content-list-item">Sobre nostros</li>
+            <li class="footer__content-list-item">Centro de carreras</li>
+            <li class="footer__content-list-item">Vacantes</li>
+          </ul>
+        </div>
+
+        <div class="footer__content-block blog">
+          <h5 class="footer__content-title">blog</h5>
+          <ul class="footer__content-list">
+            <li class="footer__content-list-item">Diseño</li>
+            <li class="footer__content-list-item">Programación & Data</li>
+            <li class="footer__content-list-item">Gaming</li>
+            <li class="footer__content-list-item">Marketing</li>
+            <li class="footer__content-list-item">Software</li>
+          </ul>
+        </div>
+
+        <div class="footer__content-contacts">
+          <div>
+            <h6 class="footer__contacts-title">WhatsApp</h6>
+            <a 
+              class="footer__contacts-text" 
+              href="tel:+525592252629"
+            >
+              +52 55 9225-2629
+            </a>
+          </div>
+          <div>
+            <h6 class="footer__contacts-title">telefone</h6>
+            <a
+              class="footer__contacts-text"
+              href="tel:+525592252629"
+            >
+              +52 55 9225-2629
+            </a>
+          </div>
+          <div>
+            <h6 class="footer__contacts-title">email</h6>
+            <a 
+              class="footer__contacts-text" 
+              href="Ebac.mx@gmail.com"
+            >
+              Ebac.mx@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__content-links">
+          <img src="<%=require('./svg/icon-inst.svg')%>" alt="instagram">
+          <img src="<%=require('./svg/icon-facebook.svg')%>" alt="facebook">
+          <img src="<%=require('./svg/icon-youtube.svg')%>" alt="toutube">
+          <img src="<%=require('./svg/icon-in.svg')%>" alt="in">
+        </div>
+      </section>
+      <hr class="footer-line">
+      <p class="footer-privicy">AVISO DE PRIVACIDAD ALUMNOS • AVISO DE PRIVACIDAD PROFESORES • TÉRMINOS Y CONDICIONES</p>
+    </footer>
   </body>
 </html>

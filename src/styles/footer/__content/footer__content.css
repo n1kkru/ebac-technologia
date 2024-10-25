@@ -1,0 +1,118 @@
+.footer__content {
+  display: grid;
+  gap: 64px;
+  grid-template-columns: 352px auto auto auto auto;
+  grid-template-rows: 82px auto auto;
+  grid-template-areas: 
+    "logo cursos web sobre blog"
+    "form cursos web sobre blog"
+    "contacts contacts . . links";
+}
+
+.footer__content-about {
+  grid-area: logo;
+}
+
+.footer__content-form {
+  grid-area: form;
+  padding-block-start: 15px;
+}
+
+.footer__content-form-input {
+  width: 279px;
+  height: 45px;
+  border: 1.5px solid rgba(252, 250, 249, 1);
+  border-radius: 88px;
+  background-color: inherit;
+  padding: 0;
+  margin-block-end: 15px;
+}
+
+.footer__content-form-input::placeholder {
+  padding: 15px;
+  color: #E8E8E8;
+
+}
+
+.footer__content-form-button {
+  width: 280px;
+  height: 50px;
+  border: none;
+  border-radius: 88px;
+  color: rgba(252, 250, 249, 1);
+  font: 700 18px "Nunito", san-serif;
+  background-color: var(--accent-bgcolor);
+}
+
+.footer__content-title { 
+  color: rgba(117, 119, 120, 1);
+  font: 700 18px "Nunito";
+  text-transform: uppercase;
+  line-height: 28.8px;
+  margin-block-end: 33px;
+}
+
+.footer__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 120px;
+}
+
+.footer__content-list-item {
+  color: rgba(252, 250, 249, 1);
+  font: 500 15px "Nunito";
+  line-height: 21px;
+}
+
+.footer__content-contacts {
+  grid-area: contacts;
+  display: flex;
+  gap: 40px;
+}
+
+.footer__contacts-title {
+  color: rgba(117, 119, 120, 1);
+  font: 500 13px "Nunito";
+  text-transform: uppercase;
+  line-height: 20.8px;
+}
+
+.footer__contacts-text {
+  color: rgba(252, 250, 249, 1);
+  font: 700 18px "Nunito";
+  line-height: 28.8px;
+}
+
+.footer__content-links {
+  grid-area: links;
+  display: flex;
+  gap: 16px;
+}
+
+.footer__content-links img {
+  height: 32px;
+  width: 32px;
+}
+
+.achivement {
+  max-width: 80px;
+  max-height: 80px;
+  padding-inline-start: 28px;
+}
+
+.cursos {
+  grid-area: cursos;
+}
+
+.web {
+  grid-area: web;
+}
+
+.sobre {
+  grid-area: sobre;
+}
+
+.blog {
+  grid-area: blog;
+}

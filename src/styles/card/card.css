@@ -11,7 +11,7 @@
 .card-author {
   display: grid;
   grid-template-columns: 64px auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: minmax(min-content, 69px) auto;
   grid-template-areas:
     "avatar name "
     "avatar job";
@@ -21,7 +21,7 @@
 .card-avatar {
   grid-area: avatar;
   max-width: 64px;
-  max-height: 64px;
+  height: 94px;
 }
 
 .card-avatar > img {
@@ -34,6 +34,7 @@
 .card-name {
   grid-area: name;
   font: 400 26px 'Archivo Black', san-serif;
+  line-height: 31.2px;
 }
 
 .card-job {
@@ -48,7 +49,21 @@
 }
 
 .card-theme {
-  padding-block: 40px;
+  padding-block: 14px 40px;
   font: 400 30px 'Archivo Black', san-serif;
   line-height: 36px;
 }
+
+.card-description p {
+  font: 500 15px "Nunito";
+  line-height: 21px;
+  display: inline-block;
+  padding-inline-end: 18px;
+}
+
+.card-description-date {
+  padding-block-start: 5px;
+  color: rgba(252, 250, 249, 1);
+}
+
+/* переделать svg clock*/

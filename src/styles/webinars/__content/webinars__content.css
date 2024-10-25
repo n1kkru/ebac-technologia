@@ -8,11 +8,12 @@
     ". . .";
   justify-content: center;
   gap: 80px 40px;
-  padding: 116px;
+  padding: 140px 116px;
   color: rgba(252, 250, 249, 1);
   background-color: rgba(27, 31, 33, 1);
   background-image: url("../../../img/bg-web.png");
   background-repeat: no-repeat;
+  transform: translateY(-55px);
 }
 
 .webinars__content-title {

@@ -2,8 +2,18 @@
   background-color: rgba(242, 242, 242, 1);
 }
 
-.subscribe > .runline {
+.subscribe > .runline:first-child {
+  transform: translateY(-81px);
   rotate: 2deg;
+}
+
+.subscribe > .runline:last-child
+{
+  color: rgba(242, 242, 242, 1);
+}
+
+.subscribe > .runline::after:last-child {
+  background-image: url("../../svg/star-white.svg");
 }
 
 .subscribe__card {
@@ -14,7 +24,7 @@
   gap: 88px;
   width: 1208px;
   max-height: 518px;
-  margin: 94px auto 224px;
+  margin: 50px auto 135px;
   background: url("../../img/bg-subscribe.png");
   background-color: var(--accent-color, rgba(87, 172, 188, 1));
   background-repeat: no-repeat;
@@ -29,7 +39,7 @@
   flex-direction: column;
   gap: 88px;
   max-width: 792px;
-  padding: 64px;
+  padding: 64px 0px 64px 100px;
   color: rgba(252, 250, 249, 1);
 }
 
@@ -66,6 +76,11 @@
   border: 1.5px solid rgba(252, 250, 249, 1);
   border-radius: 88px;
   background-color: inherit;
+}
+
+.content__form input[type="email"]::placeholder {
+  padding: 15px;
+  color: rgba(242, 242, 242, 1);
 }
 
 .content__form-button {
