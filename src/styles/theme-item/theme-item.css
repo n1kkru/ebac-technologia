@@ -1,5 +1,5 @@
 .theme-item {
-  color: var(--accent-color);
+  color: var(--accent-bgcolor);
   font: 500 15px "Nunito", "san-serif";
 }
 
@@ -7,5 +7,5 @@
   border-radius: 20px;
   padding: 8px 18px;
   color: var(--main-color);
-  background-color: var(--accent-bgcolor);
+  background-color: var(--accent-tgcolor);
 }

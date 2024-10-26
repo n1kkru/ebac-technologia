@@ -2,7 +2,7 @@
 @import url('./__content/preview__content.css');
 
 .preview {
-  padding: 80px 116px 122px;
+  padding: 76px 116px 122px;
   display: flex;
   gap: 40px;
 }

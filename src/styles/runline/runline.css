@@ -6,7 +6,7 @@
   width: 100vw;
   height: 120px;
   margin-inline-start: -10px;
-  background: var(--accent-bgcolor);
+  background: var(--accent-tgcolor);
   z-index: 10;
 }
 
@@ -18,7 +18,7 @@
   position: relative;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 3s linear infinite;
+  animation: marquee 5s linear infinite;
   z-index: 10;
 }
 

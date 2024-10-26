@@ -1,4 +1,8 @@
 .header__logo {
-  min-width: 109px;
-  min-height: 40px;
+  max-width: 109px;
+  max-height: 40px;
+}
+
+.header__logo:hover .logo {
+  color: var(--accent-bgcolor);
 }

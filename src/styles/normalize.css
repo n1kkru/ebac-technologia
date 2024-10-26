@@ -81,3 +81,92 @@ ul,
 time {
   padding: 0;
 }
+
+input[type="email"]::placeholder {
+  padding-inline: 24px;
+  color: rgba(232, 232, 232, 1);
+}
+
+input[type="email"]:hover::placeholder {
+  color: rgba(252, 250, 249, 1);
+}
+
+input[type="email"]:focus {
+  border: 2px solid rgba(27, 31, 33, 1);
+  outline: none;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  position: relative;
+  display: inline-block;
+  padding-inline-start: 35px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid rgba(252, 250, 249, 1);
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+input[type="checkbox"]:checked + label:hover:before,
+input[type="checkbox"]:not(:checked) + label:hover:before {
+  background: #f2f2f233;
+}
+
+input[type="checkbox"]:checked + label:focus:before,
+input[type="checkbox"]:not(:checked) + label:focus:before {
+  border: 2px solid #1b1f21;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  top: 6px;
+  left: 6px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-bottom: 4px solid #fe6d44;
+  border-left: 4px solid #fe6d44;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #fcfaf9;
+}

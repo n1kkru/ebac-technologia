@@ -19,6 +19,7 @@
 }
 
 .footer__content-form-input {
+
   width: 279px;
   height: 45px;
   border: 1.5px solid rgba(252, 250, 249, 1);
@@ -26,13 +27,10 @@
   background-color: inherit;
   padding: 0;
   margin-block-end: 15px;
-}
-
-.footer__content-form-input::placeholder {
-  padding: 15px;
   color: #E8E8E8;
-
+  padding-inline-start: 15px;
 }
+
 
 .footer__content-form-button {
   width: 280px;
@@ -42,6 +40,15 @@
   color: rgba(252, 250, 249, 1);
   font: 700 18px "Nunito", san-serif;
   background-color: var(--accent-bgcolor);
+}
+
+.footer__content-form-button:hover,
+.footer__content-form-button:active { 
+  background-color: rgba(218, 51, 105, 1);
+}
+
+.footer__content-form-button:focus {
+  outline: 2px solid rgba(252, 250, 249, 1);
 }
 
 .footer__content-title { 
@@ -76,12 +83,24 @@
   font: 500 13px "Nunito";
   text-transform: uppercase;
   line-height: 20.8px;
+
+}
+
+.footer__contacts-text:hover::after {
+  position: absolute;
+  content: "";
+  height: 1.5px;
+  width: 90%;
+  background-color: #E8E8E8;
+  top: 28px;
+  left: 8px;
 }
 
 .footer__contacts-text {
   color: rgba(252, 250, 249, 1);
   font: 700 18px "Nunito";
   line-height: 28.8px;
+  position: relative;
 }
 
 .footer__content-links {

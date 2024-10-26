@@ -38,3 +38,18 @@
   right: 0;
   background-image: url('../../../img/gaming-sticker.png');
 }
+
+.article:hover .diseno::before,
+.article:hover .gaming::before,
+.article:hover .software::before {
+  animation: flip 10s linear infinite;
+}
+
+@keyframes flip {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}

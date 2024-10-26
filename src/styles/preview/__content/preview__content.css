@@ -42,7 +42,8 @@
   border-radius: 40px;
   padding: 15px;
   font: 500 18px "Nunito", "san-serif";
-  background-color: var(--accent-bgcolor, rgba(190, 219, 57, 1));
+  background-color: var(--accent-tgcolor, rgba(190, 219, 57, 1));
+  cursor: pointer;
 }
 
 .preview__content-button::after {
@@ -54,4 +55,15 @@
   height: 47.4px;
   border: 1.5px solid var(--main-color);
   border-radius: 30px;
+}
+
+.preview__content-button:hover,
+.preview__content-button:active { 
+  background-color: var(--main-color);
+  color: rgba(252, 250, 249, 1);
+}
+
+.preview__content-button:focus::after {
+  outline: none;
+  visibility: hidden;
 }

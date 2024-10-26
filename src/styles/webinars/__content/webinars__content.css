@@ -34,3 +34,12 @@
   background: var(--accent-bgcolor);
   cursor: pointer;
 }
+
+.webinars__content-button:hover,
+.webinars__content-button:active { 
+  background-color: rgba(218, 51, 105, 1);
+}
+
+.webinars__content-button:focus {
+  outline: 2px solid rgba(252, 250, 249, 1);
+}

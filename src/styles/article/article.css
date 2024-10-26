@@ -2,7 +2,6 @@
 @import url("./__content/article__content.css");
 @import url("./__image/stickers.css");
 
-
 .article {
   display: flex;
   flex-direction: column;
@@ -11,7 +10,7 @@
   max-width: 584px;
   max-height: 627px;
   margin: auto;
-  padding-block-end: 46px;
+  padding-block-end: 43px;
 }
 
 .article-big {

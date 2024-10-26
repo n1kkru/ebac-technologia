@@ -22,11 +22,12 @@
   font-size: 15px;
 }
 
-.article__content-date-and-time time {
-  /* padding-inline-end: 16px; */
+.article .article__content-date-and-time time {
+  padding-inline-end: 16px;
 }
 
 /* разметка контента большой карточки*/
+
 .article-big .content-theme {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -45,6 +46,7 @@
 
 .article-big .article__content-text {
   max-width: fit-content;
+  padding-block-start: 8px;
 }
 
 .article-big .theme-item_is-activ {
@@ -61,7 +63,11 @@
     "date idate"
     "time itime";
   justify-items: end;
-  padding-block-start: 18px;
+  padding-block-start: 28px;
+}
+
+.article-big .article__content-date-and-time time {
+  padding-inline-end: 0;
 }
 
 .icon-date {
