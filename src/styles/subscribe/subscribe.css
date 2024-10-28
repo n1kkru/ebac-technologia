@@ -65,3 +65,33 @@
   top: 180px;
   left: calc(50% - 153px);
 }
+
+@media (max-width: 1279px) {
+  .subscribe__card {
+    position: relative;
+    gap: 16px;
+    width: 53.7vw;
+    height: 498px;
+    border-radius: 32px;
+    mask-image: none;
+    margin-inline-start: clamp(32px, 50vw, 116px);
+    margin-inline-end: 32px;
+  }
+
+  .subscribe__card__content {
+    gap: 64px;
+    max-width: 368px;
+    padding: 32px 16px;
+  }
+
+  .subscribe__card__decor {
+    position: absolute;
+    top: 0;
+    left: 43vw;
+    z-index: 1;
+    width: 288px;
+
+    mask-image: url("../../svg/subscribe-mask-tablet.svg");
+    mask-repeat: no-repeat;
+  }
+}

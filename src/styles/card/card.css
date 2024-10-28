@@ -11,17 +11,17 @@
 .card-author {
   display: grid;
   grid-template-columns: 64px auto;
-  grid-template-rows: minmax(min-content, 69px) auto;
   grid-template-areas:
     "avatar name "
     "avatar job";
   gap: 0 20px;
+  align-items: center;
 }
 
 .card-avatar {
   grid-area: avatar;
   max-width: 64px;
-  height: 94px;
+  height: 64px;
 }
 
 .card-avatar > img {
@@ -66,4 +66,21 @@
   color: rgba(252, 250, 249, 1);
 }
 
-/* переделать svg clock*/
+@media (max-width: 1279px) {
+  .card {
+    padding: 24px;
+  }
+
+  .card:last-child {
+    grid-area: long-card;
+    max-width: 100%;
+  }
+
+  .card-author {
+    align-items: end;
+  }
+  
+  .card-job {
+    max-width: 100%;
+  }
+}

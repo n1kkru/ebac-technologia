@@ -58,12 +58,79 @@
 }
 
 .preview__content-button:hover,
-.preview__content-button:active { 
-  background-color: var(--main-color);
+.preview__content-button:active {
   color: rgba(252, 250, 249, 1);
+  background-color: var(--main-color);
 }
 
 .preview__content-button:focus::after {
-  outline: none;
   visibility: hidden;
+  outline: none;
+}
+
+@media (max-width: 1279px) {
+  .preview__content {
+    display: grid;
+    grid-template-columns: 219px auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "theme title"
+      "date txt"
+      "btn btn";
+    gap: 0px 19px;
+    padding-block: 0px;
+  }
+
+  .preview__content .content-theme {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "activ activ activ"
+      ". . .";
+    justify-self: end;
+    align-self: start;
+    padding-block-start: 18px;
+  }
+
+  .preview__content .theme-item_is-activ {
+    grid-area: activ;
+    justify-self: end;
+    align-self: start;
+  }
+
+  .preview__content-title {
+    grid-area: title;
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+
+  .preview__content-text {
+    grid-area: txt;
+    font-size: 18px;
+  }
+
+  .preview__content-date-and-time {
+    grid-area: date;
+  }
+
+  .preview__content-date-and-time {
+    display: grid;
+    grid-template-columns: auto 17px;
+    grid-template-rows: 21px 21px;
+    grid-template-areas:
+      "date idate"
+      "time itime";
+    justify-items: end;
+    padding: 0;
+  }
+
+  .preview__content-date-and-time time {
+    padding-inline-end: 0;
+  }
+
+  .preview__content-button {
+    grid-area: btn;
+    justify-self: center;
+  }
 }

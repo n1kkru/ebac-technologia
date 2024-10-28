@@ -35,7 +35,6 @@
           </li>
         </ul>
       </nav>
-
       <a class="header__other" href="#">
         <button class="header__other-button">
           <img
@@ -76,17 +75,19 @@
           </p>
           <div class="preview__content-date-and-time">
             <img
+              class="icon-date"
               aria-hidden="true"
               src="<%=require('./svg/calendar.svg')%>"
               alt="Дата"
             />
-            <time>2 de junio de 2022</time>
+            <time class="date">2 de junio de 2022</time>
             <img
+              class="icon-time"
               aria-hidden="true"
               src="<%=require('./svg/clock.svg')%>"
               alt="Время"
             />
-            <div>10 min</div>
+            <div class="time">10 min</div>
           </div>
           <button class="preview__content-button">Leer el artículo</button>
         </div>
@@ -116,7 +117,6 @@
               <li class="theme-item">Niños</li>
               <li class="theme-item">Proyecto</li>
             </ul>
-            <!-- todo отступ время -->
             <h1 class="article__content-title">
               ¿Cómo hacer el cambio de carrera a Diseño de Productos Digitales?
             </h1>

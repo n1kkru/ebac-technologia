@@ -1,12 +1,12 @@
 .footer__content {
   display: grid;
-  gap: 64px;
   grid-template-columns: 352px auto auto auto auto;
   grid-template-rows: 82px auto auto;
-  grid-template-areas: 
+  grid-template-areas:
     "logo cursos web sobre blog"
     "form cursos web sobre blog"
     "contacts contacts . . links";
+  gap: 64px;
 }
 
 .footer__content-about {
@@ -19,18 +19,17 @@
 }
 
 .footer__content-form-input {
-
+  box-sizing: border-box;
   width: 279px;
   height: 45px;
+  margin-block-end: 15px;
   border: 1.5px solid rgba(252, 250, 249, 1);
   border-radius: 88px;
-  background-color: inherit;
   padding: 0;
-  margin-block-end: 15px;
-  color: #E8E8E8;
   padding-inline-start: 15px;
+  color: #e8e8e8;
+  background-color: inherit;
 }
-
 
 .footer__content-form-button {
   width: 280px;
@@ -43,7 +42,7 @@
 }
 
 .footer__content-form-button:hover,
-.footer__content-form-button:active { 
+.footer__content-form-button:active {
   background-color: rgba(218, 51, 105, 1);
 }
 
@@ -51,12 +50,12 @@
   outline: 2px solid rgba(252, 250, 249, 1);
 }
 
-.footer__content-title { 
+.footer__content-title {
+  margin-block-end: 33px;
   color: rgba(117, 119, 120, 1);
   font: 700 18px "Nunito";
-  text-transform: uppercase;
   line-height: 28.8px;
-  margin-block-end: 33px;
+  text-transform: uppercase;
 }
 
 .footer__content-list {
@@ -73,45 +72,44 @@
 }
 
 .footer__content-contacts {
-  grid-area: contacts;
   display: flex;
+  grid-area: contacts;
   gap: 40px;
 }
 
 .footer__contacts-title {
   color: rgba(117, 119, 120, 1);
   font: 500 13px "Nunito";
-  text-transform: uppercase;
   line-height: 20.8px;
-
+  text-transform: uppercase;
 }
 
 .footer__contacts-text:hover::after {
-  position: absolute;
   content: "";
-  height: 1.5px;
-  width: 90%;
-  background-color: #E8E8E8;
+  position: absolute;
   top: 28px;
   left: 8px;
+  width: 90%;
+  height: 1.5px;
+  background-color: #e8e8e8;
 }
 
 .footer__contacts-text {
+  position: relative;
   color: rgba(252, 250, 249, 1);
   font: 700 18px "Nunito";
   line-height: 28.8px;
-  position: relative;
 }
 
 .footer__content-links {
-  grid-area: links;
   display: flex;
+  grid-area: links;
   gap: 16px;
 }
 
 .footer__content-links img {
-  height: 32px;
   width: 32px;
+  height: 32px;
 }
 
 .achivement {
@@ -134,4 +132,38 @@
 
 .blog {
   grid-area: blog;
+}
+
+@media (max-width: 1279px) {
+  .footer__content {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "logo logo form form "
+      "links links form form "
+      "cursos web sobre blog"
+      "contacts contacts contacts contacts";
+    gap: 32px;
+    max-width: 95vw;
+  }
+
+  .footer__content-about {
+    height: 64px;
+  }
+
+  .footer__content-about img:first-child {
+    max-width: 173px;
+    height: 100%;
+  }
+
+  .achivement {
+    max-width: 64px;
+    max-height: 64px;
+  }
+
+  .footer__content-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }

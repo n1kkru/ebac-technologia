@@ -82,3 +82,15 @@
 .time {
   grid-area: time;
 }
+
+@media (max-width: 1279px) {
+  .article {
+    padding: 0;
+    max-width: 42vw;
+    justify-content: start;
+  }
+
+  .article-big {
+    max-width: 92vw;
+  }
+}

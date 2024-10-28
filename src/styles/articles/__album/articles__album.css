@@ -10,6 +10,12 @@
   padding: 200px 116px 116px;
 }
 
-.article-big {
-  grid-area: big;
+
+@media (max-width: 1279px) {
+  .articles__album {
+    padding: 200px 50px;
+    margin: auto;
+    display: grid;
+    gap: 95px 16px;
+  }
 }

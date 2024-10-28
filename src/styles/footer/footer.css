@@ -1,5 +1,5 @@
-@import url('./__contacts/footer__contacts.css');
-@import url('./__content/footer__content.css');
+@import url("./__contacts/footer__contacts.css");
+@import url("./__content/footer__content.css");
 
 .footer {
   padding: 64px 116px 80px;
@@ -7,14 +7,20 @@
 }
 
 .footer-line {
-  background-color: #434343;
   height: 1px;
-  border: none;
   margin: 24px 0px;
+  border: none;
+  background-color: #434343;
 }
 
 .footer-privicy {
+  color: #aeaeae;
   font: 500 13px "Nunito";
   line-height: 20.8px;
-  color: #AEAEAE;
+}
+
+@media (max-width: 1279px) {
+  .footer {
+    padding: 64px 32px;
+  }
 }

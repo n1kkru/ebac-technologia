@@ -1,19 +1,20 @@
 .header__other {
-  display: flex;
-  gap: 8px;
-  align-items: center;
   position: relative;
+  display: flex;
+  grid-area: other;
+  align-items: center;
+  gap: 8px;
 }
 
 .header__other:hover::after,
 .header__other:active::after {
-  position: absolute;
   content: "";
-  height: 1.5px;
-  width: 90%;
-  background-color: var(--accent-bgcolor);
+  position: absolute;
   top: 28px;
   left: 8px;
+  width: 90%;
+  height: 1.5px;
+  background-color: var(--accent-bgcolor);
 }
 
 .header__other > .search {
@@ -21,7 +22,7 @@
 }
 
 .header__other-button {
-  cursor: pointer;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

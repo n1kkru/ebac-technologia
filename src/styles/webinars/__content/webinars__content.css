@@ -43,3 +43,15 @@
 .webinars__content-button:focus {
   outline: 2px solid rgba(252, 250, 249, 1);
 }
+
+@media (max-width: 1279px) {
+  .webinars__content {
+    grid-template-columns: auto auto;
+    grid-template-rows: 65px auto auto;
+    grid-template-areas:
+    "title button"
+    ". ."
+    "long-card long-card";
+    padding: 140px 32px;
+  }
+}

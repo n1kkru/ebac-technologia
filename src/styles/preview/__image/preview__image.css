@@ -13,3 +13,22 @@
   mask-repeat: no-repeat;
   mask-size: contain;
 }
+
+@media (max-width: 1279px) {
+  .preview__image-block {
+    width: 92vw;
+    height: 42vw;
+  }
+
+  .preview__image {
+    max-height: 100%;
+    width: 100%;
+  }
+
+  .mask-image {
+    --webkit-mask-image: url('../../../svg/preview-mask-desc.svg');
+    mask-image: url('../../../svg/preview-mask-desc.svg');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+}

@@ -21,6 +21,7 @@
     "img img"
     "theme title"
     "date txt";
+  grid-area: big;
   gap: 0px 19px;
   max-width: 1208px;
   max-height: 2246px;
@@ -49,4 +50,17 @@
   grid-area: date;
   justify-self: end;
   align-self: start;
+}
+
+@media (max-width: 1279px) {
+  .article {
+    justify-content: start;
+    max-width: 42vw;
+    padding: 0;
+  }
+
+  .article-big {
+    grid-template-columns: 28vw auto;
+    max-width: 92vw;
+  }
 }

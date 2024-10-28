@@ -8,7 +8,7 @@
   border: 1.2px solid rgba(232, 232, 232, 1);
   border-radius: 20px;
   padding: 8px 18px;
-  color: var(--main-color, #1B1F21);
+  color: var(--main-color, #1b1f21);
   font: 500 15px "Nunito", "san-serif";
   line-height: 21px;
 }
