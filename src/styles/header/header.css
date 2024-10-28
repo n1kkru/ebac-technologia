@@ -32,3 +32,23 @@
     justify-self: end;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px;
+    gap: 12px;
+    max-width: 95vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header > a {
+    max-width: 144px;
+  }
+
+  .header nav {
+    overflow-x: scroll;
+    scrollbar-width: none;
+   }
+
+}

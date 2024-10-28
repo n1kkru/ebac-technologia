@@ -134,3 +134,15 @@
     justify-self: center;
   }
 }
+
+@media (max-width: 768px) {
+  .preview__content {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .preview__content .content-theme,
+  .preview__content-date-and-time {
+    display: flex;
+  }
+}

@@ -2,15 +2,23 @@
 @import url('./__content/preview__content.css');
 
 .preview {
-  padding: 76px 116px 122px;
   display: flex;
   gap: 40px;
+  padding: 76px 116px 122px;
 }
 
 @media (max-width: 1279px) {
   .preview {
-    padding: 48px 32px;
     display: grid;
     justify-items: center;
+    padding: 48px 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .preview {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 8px;
   }
 }
