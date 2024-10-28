@@ -147,7 +147,7 @@
       "links links form form "
       "cursos web sobre blog"
       "contacts contacts contacts contacts";
-    gap: 32px;
+    gap: 50px 0;
     max-width: 95vw;
   }
 
@@ -163,12 +163,38 @@
   .achivement {
     max-width: 64px;
     max-height: 64px;
+    padding-inline-start: 42px;
   }
 
   .footer__content-form {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 0;
+  }
+
+  .footer__content-links {
+    gap: 24px;
+  }
+
+  .footer__content-block {
+    padding-block: 32px 40px;
+  }
+
+  .footer__content-list-item:first-of-type {
+    padding: 32px 0 0 0;
+  }
+
+  .sobre {
+    justify-self: flex-start;
+  }
+
+  .blog {
+    justify-self: end;
+  }
+
+  .footer__content-list {
+    max-width: 125px;
   }
 }
 
@@ -176,11 +202,12 @@
   .footer__content {
     display: flex;
     flex-direction: column;
+    gap: 40px 0;
   }
 
   .footer__content-about {
-    align-self: center;
     order: 1;
+    align-self: center;
   }
 
   .footer__content-links {
@@ -195,12 +222,13 @@
 
   .footer__content-block {
     order: 3;
+    padding-block: 20px 40px;
   }
 
   .footer__content-contacts {
-    order: 4;
     display: flex;
     flex-direction: column;
+    order: 4;
   }
 
   .footer__content-form {
@@ -209,15 +237,15 @@
   }
 
   .footer__content-block input:not(:checked) + label + .footer__content-list {
-    height: 0;
     box-sizing: border-box;
+    height: 0;
     overflow: hidden;
   }
 
   .footer__content-title {
-    cursor: pointer;
     display: block;
     box-sizing: border-box;
+    cursor: pointer;
   }
 
 

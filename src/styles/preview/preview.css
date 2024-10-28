@@ -1,5 +1,5 @@
-@import url('./__image/preview__image.css');
-@import url('./__content/preview__content.css');
+@import url("./__image/preview__image.css");
+@import url("./__content/preview__content.css");
 
 .preview {
   display: flex;
@@ -11,7 +11,8 @@
   .preview {
     display: grid;
     justify-items: center;
-    padding: 48px 32px;
+    gap: 20px;
+    padding: 36px 32px 56px;
   }
 }
 
@@ -19,6 +20,6 @@
   .preview {
     display: flex;
     flex-direction: column;
-    padding: 24px 8px;
+    padding: 12px 8px 36px;
   }
 }

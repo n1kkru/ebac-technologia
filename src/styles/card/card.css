@@ -66,6 +66,10 @@
   color: rgba(252, 250, 249, 1);
 }
 
+time {
+  font-family: "Nunito";
+}
+
 @media (max-width: 1279px) {
   .card {
     padding: 24px;
@@ -77,16 +81,44 @@
   }
 
   .card-author {
-    align-items: end;
+    align-items: flex-start;
   }
   
   .card-job {
     max-width: 100%;
+  }
+
+  .card-theme {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  .card-description-date {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .card-description-date time {
+    max-width: 152px;
   }
 }
 
 @media (max-width: 767px) {
   .card {
     max-width: 100%;
+  }
+
+  .card-name {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  .card-theme {
+    padding-block: 14px 40px;
+  }
+
+  time {
+    font-size: 15px;
   }
 }

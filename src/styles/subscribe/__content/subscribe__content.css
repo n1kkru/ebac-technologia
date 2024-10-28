@@ -84,4 +84,20 @@
     gap: 16px;
     max-width: 576px;
   }
+
+  .content__form-checkbox label {
+    font-size: 13px;
+    line-height: 18.2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content__info {
+    padding-inline: 14px;
+  }
+
+  .content__form {
+    padding-block-start: 15px;
+    gap: 7px;
+  }
 }

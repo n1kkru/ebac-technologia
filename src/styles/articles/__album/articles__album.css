@@ -13,18 +13,19 @@
 
 @media (max-width: 1279px) {
   .articles__album {
-    padding: 200px 50px;
+    padding: 185px 28px 213px;
     margin: auto;
-    display: grid;
-    gap: 95px 16px;
+    gap: 105px 16px;
+    justify-items: center;
+    justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .articles__album {
     display: flex;
     flex-direction: column;
     gap: 104px;
-    padding: 120px 8px 2px;
+    padding: 164px 8px 78px;
   }
 }

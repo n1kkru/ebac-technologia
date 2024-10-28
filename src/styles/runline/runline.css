@@ -41,5 +41,16 @@
   .runline {
     width: calc(100vw + 20px);
     transform: translateX(5px);
+    height: 80px;
   }
+
+  .runline-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .runline-title::after {
+    top: 0;
+  }
+
 }

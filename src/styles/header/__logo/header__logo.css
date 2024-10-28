@@ -6,3 +6,10 @@
 .header__logo:hover .logo {
   color: var(--accent-bgcolor);
 }
+
+@media (max-width: 767px) {
+  .header__logo {
+    width: 130px;
+    height: 48px;
+  }
+}

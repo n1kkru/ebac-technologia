@@ -11,10 +11,10 @@
 
 @media (max-width: 1279px) {
   .header {
-    padding: 16px 32px;
     display: grid;
-    gap: 24px;
     justify-content: center;
+    gap: 20px;
+    padding: 16px 32px;
     grid-template: 
       "logo other" auto
       "nav nav" auto / auto auto;
@@ -27,19 +27,15 @@
   .header__logo {
     grid-area: logo;
   }
-
-  .header__other {
-    justify-self: end;
-  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
-    padding: 16px;
-    gap: 12px;
-    max-width: 95vw;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
+    max-width: 95vw;
+    padding: 16px 8px;
   }
 
   .header > a {

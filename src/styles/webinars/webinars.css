@@ -3,3 +3,9 @@
 .webinars > .runline {
   rotate: -3deg;
 }
+
+@media (max-width: 767px) {
+  .webinars > .runline {
+    rotate: -4deg;
+  }
+}
