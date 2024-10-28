@@ -170,3 +170,7 @@ input[type="checkbox"]:checked + label:after {
 input[type="checkbox"]:checked + label::before {
   background-color: #fcfaf9;
 }
+
+.svg-logos{
+  visibility: hidden;
+}
