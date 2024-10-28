@@ -1,0 +1,15 @@
+.header__logo {
+  max-width: 109px;
+  max-height: 40px;
+}
+
+.header__logo:hover .logo {
+  color: var(--accent-bgcolor);
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    width: 130px;
+    height: 48px;
+  }
+}

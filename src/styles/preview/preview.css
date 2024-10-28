@@ -1,0 +1,25 @@
+@import url("./__image/preview__image.css");
+@import url("./__content/preview__content.css");
+
+.preview {
+  display: flex;
+  gap: 40px;
+  padding: 76px 116px 122px;
+}
+
+@media (max-width: 1279px) {
+  .preview {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    padding: 36px 32px 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .preview {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 8px 36px;
+  }
+}

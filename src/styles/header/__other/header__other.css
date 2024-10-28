@@ -1,0 +1,35 @@
+.header__other {
+  position: relative;
+  display: flex;
+  grid-area: other;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__other:hover::after,
+.header__other:active::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 8px;
+  width: 90%;
+  height: 1.5px;
+  background-color: var(--accent-bgcolor);
+}
+
+.header__other > .search {
+  padding-right: 14px;
+}
+
+.header__other-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 1279px) {
+  .header__other {
+    justify-self: end;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,9 @@
+.content-theme {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  background-color: transparent;
+  grid-area: theme;
+}

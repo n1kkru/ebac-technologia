@@ -1,0 +1,257 @@
+.footer__content {
+  display: grid;
+  grid-template-columns: 352px auto auto auto auto;
+  grid-template-rows: 82px auto auto;
+  grid-template-areas:
+    "logo cursos web sobre blog"
+    "form cursos web sobre blog"
+    "contacts contacts . . links";
+  gap: 64px;
+}
+
+.footer__content-about {
+  grid-area: logo;
+}
+
+.footer__content-form {
+  grid-area: form;
+  padding-block-start: 15px;
+}
+
+.footer__content-block input {
+  display: none;
+}
+
+.footer__content-form-input {
+  box-sizing: border-box;
+  width: 279px;
+  height: 45px;
+  margin-block-end: 15px;
+  border: 1.5px solid rgba(252, 250, 249, 1);
+  border-radius: 88px;
+  padding: 0;
+  padding-inline-start: 15px;
+  color: #e8e8e8;
+  background-color: inherit;
+}
+
+.footer__content-form-button {
+  width: 280px;
+  height: 50px;
+  border: none;
+  border-radius: 88px;
+  color: rgba(252, 250, 249, 1);
+  font: 700 18px "Nunito", san-serif;
+  background-color: var(--accent-bgcolor);
+}
+
+.footer__content-form-button:hover,
+.footer__content-form-button:active {
+  background-color: rgba(218, 51, 105, 1);
+}
+
+.footer__content-form-button:focus {
+  outline: 2px solid rgba(252, 250, 249, 1);
+}
+
+.footer__content-title {
+  margin-block-end: 33px;
+  color: rgba(117, 119, 120, 1);
+  font: 700 18px "Nunito";
+  line-height: 28.8px;
+  text-transform: uppercase;
+}
+
+.footer__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 120px;
+}
+
+.footer__content-list-item {
+  color: rgba(252, 250, 249, 1);
+  font: 500 15px "Nunito";
+  line-height: 21px;
+}
+
+.footer__content-contacts {
+  display: flex;
+  grid-area: contacts;
+  gap: 40px;
+}
+
+.footer__contacts-title {
+  color: rgba(117, 119, 120, 1);
+  font: 500 13px "Nunito";
+  line-height: 20.8px;
+  text-transform: uppercase;
+}
+
+.footer__contacts-text:hover::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 8px;
+  width: 90%;
+  height: 1.5px;
+  background-color: #e8e8e8;
+}
+
+.footer__contacts-text {
+  position: relative;
+  color: rgba(252, 250, 249, 1);
+  font: 700 18px "Nunito";
+  line-height: 28.8px;
+}
+
+.footer__content-links {
+  display: flex;
+  grid-area: links;
+  gap: 16px;
+}
+
+.footer__content-links img {
+  width: 32px;
+  height: 32px;
+}
+
+.achivement {
+  max-width: 80px;
+  max-height: 80px;
+  padding-inline-start: 28px;
+}
+
+.cursos {
+  grid-area: cursos;
+}
+
+.web {
+  grid-area: web;
+}
+
+.sobre {
+  grid-area: sobre;
+}
+
+.blog {
+  grid-area: blog;
+}
+
+@media (max-width: 1279px) {
+  .footer__content {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "logo logo form form "
+      "links links form form "
+      "cursos web sobre blog"
+      "contacts contacts contacts contacts";
+    gap: 50px 0;
+    max-width: 95vw;
+  }
+
+  .footer__content-about {
+    height: 64px;
+  }
+
+  .footer__content-about img:first-child {
+    max-width: 173px;
+    height: 100%;
+  }
+
+  .achivement {
+    max-width: 64px;
+    max-height: 64px;
+    padding-inline-start: 42px;
+  }
+
+  .footer__content-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .footer__content-links {
+    gap: 24px;
+  }
+
+  .footer__content-block {
+    padding-block: 32px 40px;
+  }
+
+  .footer__content-list-item:first-of-type {
+    padding: 32px 0 0 0;
+  }
+
+  .sobre {
+    justify-self: flex-start;
+  }
+
+  .blog {
+    justify-self: end;
+  }
+
+  .footer__content-list {
+    max-width: 125px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+  }
+
+  .footer__content-about {
+    order: 1;
+    align-self: center;
+  }
+
+  .footer__content-links {
+    order: 2;
+    justify-content: space-between;
+  }
+
+  .footer__content-links img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer__content-block {
+    order: 3;
+    padding-block: 20px 40px;
+  }
+
+  .footer__content-contacts {
+    display: flex;
+    flex-direction: column;
+    order: 4;
+  }
+
+  .footer__content-form {
+    order: 5;
+    align-self:center;
+  }
+
+  .footer__content-block input:not(:checked) + label + .footer__content-list {
+    box-sizing: border-box;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .footer__content-title {
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+
+
+  .footer__content-block input:checked + label + .footer__content-list {
+    height: auto;
+  }
+}
+

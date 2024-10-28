@@ -1,0 +1,102 @@
+.gaming::before,
+.fashion::before, 
+.diseno::before ,
+.marketing::before,
+.software::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  z-index: 10;
+  width: 180px;
+  height: 180px;
+}
+
+.fashion::before {
+  left: -40px;
+  background-image: url('../../../svg/sticker-fashion.svg');
+}
+
+.diseno::before {
+  right: -40px;
+  background-image: url('../../../svg/sticker-diseno.svg');
+}
+
+.marketing::before {
+  top: -75px;
+  left: -55px;
+  width: 260px;
+  background-image: url('../../../svg/sticker-marketing.svg');
+  background-repeat: no-repeat;
+}
+
+.software::before {
+  right: -40px;
+  background-image: url('../../../svg/sticker-software.svg');
+}
+
+.gaming::before {
+  top: 0;
+  right: 0;
+  background-image: url('../../../svg/sticker-gaming.svg');
+}
+
+.article:hover .diseno::before,
+.article:hover .gaming::before,
+.article:hover .software::before {
+  animation: flip 10s linear infinite;
+}
+
+@keyframes flip {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@media (max-width: 1279px) {
+  .gaming::before,
+  .fashion::before, 
+  .diseno::before ,
+  .software::before {
+    width: 104px;
+    height: 104px;
+  }
+
+  .marketing::before {
+
+  }
+
+  /*в превью и большой карточке*/
+  .preview .gaming::before,
+  .preview .fashion::before, 
+  .preview .diseno::before ,
+  .preview .software::before,
+  .article-big .gaming::before,
+  .article-big .fashion::before, 
+  .article-big .diseno::before ,
+  .article-big .software::before {
+    width: 120px;
+    height: 120px;
+  }
+
+  .fashion::before,
+  .software::before,
+  .diseno::before {
+    left: calc(100% - 104px);
+    top: 1px;
+  }
+
+  .marketing::before {
+    left: calc(100% - 114px);
+    top: 10px;
+    width: 104px;
+    height: 88px;
+  }
+
+  .gaming::before {
+    top: 0;
+    right: 0;
+  }
+}

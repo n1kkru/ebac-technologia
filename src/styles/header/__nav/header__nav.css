@@ -1,0 +1,31 @@
+.header__nav {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.header__nav-item a {
+  border: 1.2px solid rgba(232, 232, 232, 1);
+  border-radius: 20px;
+  padding: 8px 18px;
+  color: var(--main-color, #1b1f21);
+  font: 500 15px "Nunito", "san-serif";
+  line-height: 21px;
+}
+
+.header__nav-item a:hover,
+.header__nav-item a:active {
+  background-color: var(--accent-tgcolor);
+}
+
+@media (max-width: 1279px) {
+  .header__nav-item {
+    text-wrap: nowrap;
+    height: 39px;
+  }
+
+  .header__nav {
+    padding-block-start: 10px;
+    height: 100%;
+  }
+}

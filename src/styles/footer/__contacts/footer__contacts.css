@@ -1,0 +1,25 @@
+
+.footer__contacts-title {
+  color: rgba(117, 119, 120, 1);
+  font: 500 13px "Nunito";
+  text-transform: uppercase;
+  line-height: 20.8px;
+
+}
+
+.footer__contacts-text:hover::after {
+  position: absolute;
+  content: "";
+  height: 1.5px;
+  width: 90%;
+  background-color: #E8E8E8;
+  top: 28px;
+  left: 8px;
+}
+
+.footer__contacts-text {
+  color: rgba(252, 250, 249, 1);
+  font: 700 18px "Nunito";
+  line-height: 28.8px;
+  position: relative;
+}

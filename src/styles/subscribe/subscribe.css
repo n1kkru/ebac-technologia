@@ -1,0 +1,134 @@
+@import url('./__content/subscribe__content.css');
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.subscribe > .runline {
+  background-color: var(--accent-bgcolor);
+}
+
+.subscribe > .runline:first-child {
+  transform: translateY(-81px);
+  rotate: 2deg;
+}
+
+.subscribe > .runline::after:last-child {
+  background-image: url("../../svg/star-white.svg");
+}
+
+.subscribe__card {
+  --webkit-mask-image: url("../../svg/subscribe-mask.svg");
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 88px;
+  width: 1208px;
+  max-height: 518px;
+  margin: 50px 0 135px;
+  background: url("../../img/bg-subscribe.png");
+  background-color: var(--accent-color, rgba(87, 172, 188, 1));
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+  transform: translateX(-10vw);
+  mask-image: url("../../svg/subscribe-mask.svg");
+  mask-repeat: no-repeat;
+}
+
+.subscribe__card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+  max-width: 792px;
+  padding: 64px 0px 64px 100px;
+  color: rgba(252, 250, 249, 1);
+}
+
+.subscribe__card__decor {
+  position: relative;
+  width: 416px;
+  height: 518px;
+  background: rgba(27, 31, 33, 1);
+  background-image: url("../../img/bg-convert.png");
+  mask-image: url("../../svg/subscribe-mask.svg");
+  mask-repeat: no-repeat;
+}
+
+.convert-blur {
+  position: absolute;
+  top: 70px;
+  left: calc(50%-60px);
+}
+
+.convert {
+  position: absolute;
+  top: 180px;
+  left: calc(50% - 153px);
+}
+
+@media (max-width: 1279px) {
+  .subscribe > .runline:first-child {
+    rotate: 3deg;
+  }
+
+  .subscribe__card {
+    position: relative;
+    width: 73vw;
+    height: 498px;
+    border-radius: 32px;
+    mask-image: none;
+    margin: 40px 0 107px;
+  }
+
+  .subscribe__card__content {
+    gap: 64px;
+    max-width: 368px;
+    padding: 32px;
+  }
+
+  .subscribe__card__decor {
+    position: absolute;
+    top: 0;
+    left: 56vw;
+    z-index: 1;
+    width: 288px;
+    mask-image: url("../../svg/subscribe-mask-tablet.svg");
+    mask-repeat: no-repeat;
+  }
+
+  .convert {
+    left: calc(50% - 117px);
+    position: absolute;
+    top: 230px;
+    width: 227px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .subscribe__card {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 1070px;
+    margin-block-end: 100px ;
+    padding-block-end: 200px;
+    transform: none;
+  }
+
+  .subscribe__card__content {
+    padding: 20px;
+  }
+
+  .subscribe__card__decor {
+    position: relative;
+    visibility: hidden;
+    mask-image: none;
+    mask-repeat: no-repeat;
+  }
+}

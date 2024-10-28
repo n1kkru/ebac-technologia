@@ -1,0 +1,124 @@
+.card {
+  max-width: 376px;
+  border-radius: 32px;
+  padding: 32px;
+  background-color: var(--accent-bgcolor);
+  background-image: url("../../img/bg-card.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.card-author {
+  display: grid;
+  grid-template-columns: 64px auto;
+  grid-template-areas:
+    "avatar name "
+    "avatar job";
+  gap: 0 20px;
+  align-items: center;
+}
+
+.card-avatar {
+  grid-area: avatar;
+  max-width: 64px;
+  height: 64px;
+}
+
+.card-avatar > img {
+  --webkit-mask-image: url("../../svg/avatar-mask.svg");
+  width: 100%;
+  mask-image: url("../../svg/avatar-mask.svg");
+  mask-repeat: no-repeat;
+}
+
+.card-name {
+  grid-area: name;
+  font: 400 26px 'Archivo Black', san-serif;
+  line-height: 31.2px;
+}
+
+.card-job {
+  display: -webkit-box;
+  grid-area: job;
+  max-width: 230px;
+  overflow: hidden;
+  font: 500 15px 'Nunito', san-serif;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.card-theme {
+  padding-block: 14px 40px;
+  font: 400 30px 'Archivo Black', san-serif;
+  line-height: 36px;
+}
+
+.card-description p {
+  font: 500 15px "Nunito";
+  line-height: 21px;
+  display: inline-block;
+  padding-inline-end: 18px;
+}
+
+.card-description-date {
+  padding-block-start: 5px;
+  color: rgba(252, 250, 249, 1);
+}
+
+time {
+  font-family: "Nunito";
+}
+
+@media (max-width: 1279px) {
+  .card {
+    padding: 24px;
+  }
+
+  .card:last-child {
+    grid-area: long-card;
+    max-width: 100%;
+  }
+
+  .card-author {
+    align-items: flex-start;
+  }
+  
+  .card-job {
+    max-width: 100%;
+  }
+
+  .card-theme {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  .card-description-date {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .card-description-date time {
+    max-width: 152px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .card-name {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  .card-theme {
+    padding-block: 14px 40px;
+  }
+
+  time {
+    font-size: 15px;
+  }
+}

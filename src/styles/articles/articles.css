@@ -1,0 +1,11 @@
+@import url('./__album/articles__album.css');
+
+.articles > .runline {
+  rotate: -4deg;
+}
+
+@media (max-width: 1279px) { 
+  .articles > .runline {
+    rotate: -3deg;
+  }
+}

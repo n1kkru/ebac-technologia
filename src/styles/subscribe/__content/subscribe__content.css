@@ -1,0 +1,103 @@
+.content__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 624px;
+}
+
+.content__info-title {
+  font: 400 36px "Archivo Black", san-serif;
+  line-height: 43.2px;
+}
+
+.content__info-subtitle {
+  font: 400 18px "Nunito", san-serif;
+  line-height: 28.8px;
+}
+
+.content__form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: ". ." "chckbx chckbx";
+  gap: 16px;
+  max-width: 576px;
+  font: 500 18px "Nunito", san-serif;
+}
+
+.content__form input[type="email"] {
+  box-sizing: border-box;
+  width: 280px;
+  height: 50px;
+  border: 1.5px solid rgba(252, 250, 249, 1);
+  border-radius: 88px;
+  padding-inline-start: 15px;
+  background-color: inherit;
+}
+
+.content__form input[type="email"]:focus {
+  outline: none;
+}
+
+.content__form-button {
+  width: 280px;
+  height: 50px;
+  border: none;
+  border-radius: 88px;
+  color: rgba(252, 250, 249, 1);
+  font: 700 18px "Nunito", san-serif;
+  background-color: var(--accent-bgcolor);
+}
+
+.content__form-button:active,
+.content__form-button:hover {
+  outline: none;
+  background-color: var(--main-color);
+}
+
+.content__form-button:focus {
+  outline: 2px solid rgba(27, 31, 33, 1);
+}
+
+.content__form-checkbox {
+  grid-area: chckbx;
+  font: 400 15px "Nunito", san-serif;
+}
+
+.content__form-checkbox input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+.confirm {
+  font: 400 15px "Nunito", san-serif;
+}
+
+@media (max-width: 1279px) {
+  .content__info-title {
+    font: 400 26px "Archivo Black", san-serif;
+    line-height: 31.2px;
+  }
+
+  .content__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 576px;
+  }
+
+  .content__form-checkbox label {
+    font-size: 13px;
+    line-height: 18.2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content__info {
+    padding-inline: 14px;
+  }
+
+  .content__form {
+    padding-block-start: 15px;
+    gap: 7px;
+  }
+}

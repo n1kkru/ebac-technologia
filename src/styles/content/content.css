@@ -1,0 +1,14 @@
+@import url('./__section/content__section.css');
+
+.content {
+  margin: auto;
+  background-image: url('../../img/bg.png'), url('../../img/bg2.png');
+  background-position: left top, left bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media (max-width: 1279px) {
+  .content {
+    max-width: 100vw;
+  }
+}
